@@ -1,0 +1,291 @@
+/* Підключення  шрифтів */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Lobster&family=Poppins:wght@400;700&display=swap");
+
+@font-face {
+    font-family: "Helvetica Neue Condensed Black";
+    src: url("../fonts/HelveticaNeue-CondensedBlack.woff2") format('woff2'),
+    url("../fonts/HelveticaNeue-CondensedBlack.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("../fonts/HelveticaNeue.woff2") format('woff2'),
+    url("../fonts/HelveticaNeue.woff2") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	/* padding: 20px; */
+}
+/* Убираем лишний отступ. Вариант №1 */
+/*
+.text *:last-child {
+	margin-bottom: 0;
+}
+*/
+/* Убираем лишний отступ. Вариант №2 
+ для любых объектов внутри объектов с классом .text
+ добавить внешний отступ 20px вниз, 
+ но кроме последнего объекта
+
+.text *:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}*/
+/* ------------------------------ */
+
+/* Блок из макета (Car Repair and Doggie) */
+main{
+    background: #F5F5F5;
+}
+.doggie{
+    font-size: 0;
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+.subtitle{
+    max-width:436px;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 2.5px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #5D62B5;
+    background: url("../img/overline_mark.png") 0 0 no-repeat;
+    padding: 2px 0 0 32px;
+    margin-bottom: 33px;
+    }
+.title{
+    font-family: "Roboto";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 68px;
+}
+.minis{
+    text-align: center;
+}
+.mini{
+    width: 33.333%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 0 24px 0 86px;
+}
+.content-title{
+    font-family: "Roboto";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #F2726F;
+    margin-bottom: 20px;
+}
+.content-text{
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15000000596046448px;
+    color: #4B4B4B;
+}
+.block1{
+    background: url("../img/dog_love_24x.svg") 0 0 no-repeat;
+}
+.block2{
+    background: url("../img/dog_vet_24x.svg") 0 0 no-repeat;
+}
+.block3{
+    background: url("../img/dog_stream_24x.svg") 0 0 no-repeat;
+}
+
+.services-conteiner{
+    width: 100%;
+    background: url(../img/blob2.png) top right no-repeat;
+    margin-bottom: 200px;
+}
+.content:not(:last-child){
+    margin: 0 24px 24px 0;
+}
+.services{
+    max-width: 1020px;
+    font-size: 0;
+    margin-bottom: 200px;
+    margin: 0 auto;
+}
+.content-box img{
+    margin-bottom: 33px;
+}
+.content-box{
+    max-width: 324px;
+    text-align: center;
+    display: inline-block;
+    padding: 50px 44px;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+.content-box:hover{
+    box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.2);
+}
+.content{
+    margin-bottom: 66px;
+}
+.services-btn{
+    font-family: "Roboto";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    padding: 9px 20px 9px 20px;
+    border-radius: 8px;
+    max-width: 124px;
+    margin: 0 auto 0px auto;
+    color: #FFFFFF;
+    background-color: #F2726F;
+}
+.services-btn:hover{
+    box-shadow: 5px 5px 10px #F2726F;
+}
+.impact{
+    width: 100%;
+    font-size: 0;
+    vertical-align: top;
+    background-color: #29C3BE;
+    padding: 110px 0 210px 0;
+}
+.impact-conteiner{
+    max-width: 1020px;
+    margin: 0 auto;
+    font-size: 0;
+    /* background: url("../img/blob.png") top right no-repeat; */
+}
+.impact-image-blob{
+    display: block;
+    /* overflow: hidden; */
+    text-align: right;
+    margin: -110px -80px 0 0;
+}
+.impact-img{
+    display: block;
+    text-align: right;
+    margin: -380px 0px 0 522px;
+}
+.impact-img img{
+    border-radius: 40px;
+}
+.impact-titles{
+    max-width: 411px;
+    display: inline-block;
+    margin: -140px 0 0 0;
+}
+.impact .subtitle{
+    background: url("../img/white_overline_mark.png") 0 0 no-repeat;
+    color: #FFFFFF;
+}
+.impact .title{
+    color: #FFFFFF;
+}
+.impact-conteiner-item{
+    max-width: 1020px;
+    margin: 0 auto;
+    font-size: 0;
+    vertical-align: top;
+    padding: 0 24px 0 0 ;
+}
+.conteiner-item:not(:last-child){
+    padding: 0 24px 0 0 ;
+}
+.conteiner-item{
+    height: 76px;
+    width: 237px;
+    display: inline-block;
+}
+.item-img{
+    display: inline-block;
+    margin: 0 11px 0 0;
+}
+.item-body{
+    display: inline-block;
+}
+.item-num{
+    font-family: "Roboto";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0 0 3px 0;
+}
+.item-text{
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+    color: #5D62B5;
+}
